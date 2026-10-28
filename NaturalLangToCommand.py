@@ -1,8 +1,8 @@
-from google import genai
-from google.genai import errors
+#from google import genai
+#from google.genai import errors
 
-import openai
-from openai import OpenAI
+#import openai
+#from openai import OpenAI
 
 import os
 import requests
@@ -18,11 +18,11 @@ preamble: str = f"""The body of the prompt is from a user attempting to send a c
                     specified json format, do NOT send anything but the command in the specified json format. If you are 
                     unable to determine the command, return an error in the specified json format.
                     Commands:
-                    {{"command":"place", "location":"berth1"}}
-                    {{"command":"place", "location":"berth2"}}
-                    {{"command":"place", "location":"berth3"}}
+                    {{"command":"place","location":"berth1"}}
+                    {{"command":"place","location":"berth2"}}
+                    {{"command":"place","location":"berth3"}}
                     Error Format:
-                    {{"error": "unable to determine command"}}"""
+                    {{"error":"unable to determine command"}}"""
                     
                     
 """Format:{{"command":realCommand, "argument_1":realArg1, "argument_2":realArg2}} and so on"""

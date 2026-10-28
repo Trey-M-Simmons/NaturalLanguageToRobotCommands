@@ -1,7 +1,6 @@
 #Project Specific
 personalLaunch.txt
 MainTest.py
-Testing/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -163,6 +162,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.NLTC_Venv/
 
 # Spyder project settings
 .spyderproject
